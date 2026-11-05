@@ -1,4 +1,0 @@
-# Source and vendored-crate archives made by `osc service manualrun` are stored
-# with Git LFS; OBS's SCM bridge fetches LFS files by default.
-*.obscpio filter=lfs diff=lfs merge=lfs -text
-*.tar.zst filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,13 @@
+rebuild_on_push:
+  steps:
+    - trigger_services:
+        project: home:technicomp:benchtop
+        package: system76-scheduler
+    - trigger_services:
+        project: home:technicomp:benchtop
+        package: gnome-shell-extension-benchtop-focus-priority
+  filters:
+    event: push
+    branches:
+      only:
+        - main

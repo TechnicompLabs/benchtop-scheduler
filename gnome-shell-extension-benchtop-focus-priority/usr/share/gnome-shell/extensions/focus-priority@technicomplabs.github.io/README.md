@@ -1,20 +1,7 @@
-# s76-scheduler
-Tiny GNOME extension that updates process priorities using the [System76 Scheduler](https://github.com/pop-os/system76-scheduler).
+# Benchtop Focus Priority
 
-## Installation
-### Prerequisites
-You must install [System76 Scheduler](https://github.com/pop-os/system76-scheduler) separately.
+GNOME Shell extension that tells [System76 Scheduler](https://github.com/pop-os/system76-scheduler) which process owns the focused window, so that the scheduler gives it its foreground priority. Part of Technicomp Benchtop Linux, which packages it as `gnome-shell-extension-benchtop-focus-priority`.
 
-Ensure that the `com.system76.Scheduler` service is enabled:
-```
-sudo systemctl enable --now com.system76.Scheduler.service
-```
+A fork of [s76-scheduler](https://github.com/ossianwinter/s76-scheduler) by Ossian Winter, under the same license, the Mozilla Public License 2.0 (`LICENSE`). Changes from it: the name and UUID; GNOME 50 and 51 declared; the D-Bus proxy made, asynchronously, when the extension is enabled instead of when it loads, and released when it is disabled.
 
-### From source (recommended)
-```bash
-git clone https://github.com/ossianwinter/s76-scheduler ~/.local/share/gnome-shell/extensions/s76-scheduler@winter.vg
-```
-
-### Other installation methods
-- `gnome-shell-extension-s76-scheduler` in the [Arch Linux User Repository](https://aur.archlinux.org/packages/gnome-shell-extension-s76-scheduler)
-- `gnome-shell-extension-s76-scheduler` in the [Arch Linux Chinese Community Repository](https://github.com/archlinuxcn/repo/tree/master/archlinuxcn/gnome-shell-extension-s76-scheduler) (maintained by [@everyx](https://github.com/everyx))
+Requires System76 Scheduler, with `com.system76.Scheduler.service` running.
