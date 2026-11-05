@@ -1,0 +1,8 @@
+{
+  "name": "s76-scheduler",
+  "description": "Tiny GNOME extension that updates process priorities using the System76 Scheduler",
+  "uuid": "s76-scheduler@winter.vg",
+  "version": 1,
+  "url": "https://github.com/ossianwinter/s76-scheduler/",
+  "shell-version": ["46", "47", "48", "49"]
+}
